@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Model weights
+*.pt
+
+# Datasets and media (regenerate/re-add locally)
+data/
+videos/
+runs/

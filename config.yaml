@@ -1,0 +1,8 @@
+path: data            # dataset root dir
+train: images/train   # train images (relative to 'path')
+val: images/val       # val images (relative to 'path')
+test: images/test     # test images (relative to 'path'), held out, not used during training
+
+# Classes
+names:
+  0: sherman_tank
