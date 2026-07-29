@@ -1,20 +1,26 @@
 # TankTrace
+
+> **Won't run out of the box.** `data/`, `videos/`, `runs/`, and `yolov8s.pt`
+> are gitignored (too large to track) and missing from this repo. Add your
+> own dataset and video, then run `train.py` to generate `runs/`; `yolov8s.pt`
+> auto-downloads on first run. 
+
+## Summary
 Fine-tunes YOLOv8s to detect a single custom class, `sherman_tank`, then runs
 that model on video files or a live screen capture.
 
-Inspiration:
+Screenshots were taken from War Thunder and labeled in CVAT, then split into
+train/validation/test sets. A base YOLOv8 model was downloaded and `train.py`
+fine-tuned it on this dataset, producing `best.pt` which the trained weights used to actually detect tanks and judge how well the model learned. `predict_trained.py` runs the trained model on a video to see it in action, while `predict_untrained.py` runs the same video through the stock (untrained) YOLOv8 model for comparison. `evaluate_test.py` scores the trained model against the test set to measure accuracy.
+
+
+## Inspiration:
 - https://www.youtube.com/watch?v=m9fH9OWn8YM&list=LL&index=5&t=1959s
 - https://github.com/ultralytics/ultralytics
 
 Download and tools:
 - https://github.com/ultralytics/assets/releases/tag/v8.4.0
 - https://www.cvat.ai
-
-
-## Summary
-Screenshots were taken from War Thunder and labeled in CVAT, then split into
-train/validation/test sets. A base YOLOv8 model was downloaded and `train.py`
-fine-tuned it on this dataset, producing `best.pt` which the trained weights used to actually detect tanks and judge how well the model learned. `predict_trained.py` runs the trained model on a video to see it in action, while `predict_untrained.py` runs the same video through the stock (untrained) YOLOv8 model for comparison. `evaluate_test.py` scores the trained model against the test set to measure accuracy.
 
 
 
