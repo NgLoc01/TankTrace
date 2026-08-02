@@ -1,6 +1,7 @@
 # TankTrace
 
-**Won't run** `data/`, `videos/`, `runs/`, and `yolov8s.pt`
+## Won't run
+`data/`, `videos/`, `runs/`, and `yolov8s.pt`
 are gitignored (too large to track) and missing from this repo. Add your
 own dataset and video, then run `train.py` to generate `runs/`.
 
