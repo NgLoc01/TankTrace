@@ -1,9 +1,8 @@
 # TankTrace
 
-> **Won't run out of the box.** `data/`, `videos/`, `runs/`, and `yolov8s.pt`
-> are gitignored (too large to track) and missing from this repo. Add your
-> own dataset and video, then run `train.py` to generate `runs/`; `yolov8s.pt`
-> auto-downloads on first run. 
+**Won't run** `data/`, `videos/`, `runs/`, and `yolov8s.pt`
+are gitignored (too large to track) and missing from this repo. Add your
+own dataset and video, then run `train.py` to generate `runs/`.
 
 ## Summary
 Fine-tunes YOLOv8s to detect a single custom class, `sherman_tank`, then runs
